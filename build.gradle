@@ -1,0 +1,93 @@
+group 'at.ac.tgm.hit.syt.dezsys.hamplwortha'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'application'
+
+def deployName = 'hamplwortha_dezsys08'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+mainClassName = "at.ac.tgm.hit.syt.dezsys.hamplwortha.OpenCLSumY"
+
+ext.lwjglVersion = "3.0.0-SNAPSHOT"
+
+repositories {
+    mavenCentral()
+    maven {
+        url "https://oss.sonatype.org/content/repositories/snapshots"
+    }
+}
+
+dependencies {
+    compile "org.lwjgl:lwjgl:${lwjglVersion}"
+    compile "org.lwjgl:lwjgl-platform:${lwjglVersion}:natives-windows"
+    compile "org.lwjgl:lwjgl-platform:${lwjglVersion}:natives-linux"
+    compile "org.lwjgl:lwjgl-platform:${lwjglVersion}:natives-osx"
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+}
+
+//def platforms = ['windows', 'linux', 'osx']
+//platforms.each { platform ->
+//    task "${platform}Natives" {
+//        def outputDir = "lib/natives/"
+//        inputs.files(configurations.compile)
+//        outputs.dir(outputDir)
+//        doLast {
+//            copy {
+//                def artifacts = configurations.compile.resolvedConfiguration.resolvedArtifacts
+//                        .findAll { it.classifier == "natives-$platform" }
+//                artifacts.each {
+//                    from zipTree(it.file)
+//                }
+//                into outputDir
+//            }
+//        }
+//    }
+//}
+//
+//task deletelib(type: Delete) {
+//    delete "lib"
+//}
+
+//task natives {
+//    description "Copies native libraries to an appropriate directory."
+//    dependsOn deletelib, platforms.collect { "${it}Natives" }.findAll { tasks[it] }
+//}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.10'
+}
+
+task generateJavadoc(type: Javadoc) {
+    source = sourceSets.main.allJava
+    destinationDir = file("doc/javadoc")
+    classpath = configurations.compile
+    title = "Java Steam Random Games Picker"
+}
+
+task buildJar(type: Jar, dependsOn: ['clean', 'javadoc', 'generateJavadoc']) {
+    manifest {
+        attributes 'Implementation-Title': rootProject.name,
+                'Implementation-Version': version,
+                'Main-Class': mainClassName
+    }
+    baseName = deployName
+    from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+    from sourceSets.main.allSource
+    from(javadoc.destinationDir) {
+        into('doc/javadoc')
+    }
+//    from(projectDir) {
+//        include 'lib/**'
+//    }
+    from(projectDir) {
+        include 'doc/**'
+        exclude 'doc/*.docx'
+        exclude 'doc/*.odt'
+        exclude 'doc/*.tex'
+    }
+    with jar
+}
+
+compileJava.mustRunAfter clean

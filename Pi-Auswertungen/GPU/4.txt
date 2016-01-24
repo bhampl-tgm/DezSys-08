@@ -1,0 +1,35 @@
+NVIDIA OpenCL 1.2 CUDA 7.5.0 is ready. Timer: HPET (14.32 MHz)
+
+OpenCL GPU: NVIDIA GeForce GT 745M (2 CUs, 915 MHz)
+ Compiling OpenCL kernels ... done.
+
+Calculating 32.000.000th digit of PI. 20 iterations.
+
+ Allocated device memory : 16779264 Bytes
+ Batch Size              : 1M
+ Reduction Size          : 64
+
+ 00h 00m 00.262s Batch  1 finished.
+ 00h 00m 00.458s Batch  2 finished.
+ 00h 00m 00.666s Batch  3 finished.
+ 00h 00m 00.839s Batch  4 finished.
+ 00h 00m 00.999s Batch  5 finished.
+ 00h 00m 01.212s Batch  6 finished.
+ 00h 00m 01.393s Batch  7 finished.
+ 00h 00m 01.599s Batch  8 finished.
+ 00h 00m 01.772s Batch  9 finished.
+ 00h 00m 01.932s Batch 10 finished.
+ 00h 00m 02.145s Batch 11 finished.
+ 00h 00m 02.326s Batch 12 finished.
+ 00h 00m 02.533s Batch 13 finished.
+ 00h 00m 02.706s Batch 14 finished.
+ 00h 00m 02.866s Batch 15 finished.
+ 00h 00m 03.079s Batch 16 finished.
+ 00h 00m 03.260s Batch 17 finished.
+ 00h 00m 03.467s Batch 18 finished.
+ 00h 00m 03.640s Batch 19 finished.
+ 00h 00m 03.800s PI value output -> 4286DFB04
+
+Statistics
+
+ Calculation + Reduction time: 3.521s + 0.249s

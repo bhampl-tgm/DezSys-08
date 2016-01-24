@@ -1,0 +1,35 @@
+Intel OpenCL 1.2 is ready. Timer: HPET (14.32 MHz)
+
+OpenCL CPU: Intel Core i7-4500U (4 CUs, 1800 MHz)
+ Compiling OpenCL kernels ... done.
+
+Calculating 32.000.000th digit of PI. 20 iterations.
+
+ Allocated device memory : 16779264 Bytes
+ Batch Size              : 1M
+ Reduction Size          : 64
+
+ 00h 00m 03.855s Batch  1 finished.
+ 00h 00m 05.321s Batch  2 finished.
+ 00h 00m 06.995s Batch  3 finished.
+ 00h 00m 08.389s Batch  4 finished.
+ 00h 00m 09.682s Batch  5 finished.
+ 00h 00m 11.413s Batch  6 finished.
+ 00h 00m 12.883s Batch  7 finished.
+ 00h 00m 14.558s Batch  8 finished.
+ 00h 00m 15.952s Batch  9 finished.
+ 00h 00m 17.242s Batch 10 finished.
+ 00h 00m 18.984s Batch 11 finished.
+ 00h 00m 20.451s Batch 12 finished.
+ 00h 00m 22.127s Batch 13 finished.
+ 00h 00m 23.523s Batch 14 finished.
+ 00h 00m 24.815s Batch 15 finished.
+ 00h 00m 26.547s Batch 16 finished.
+ 00h 00m 28.014s Batch 17 finished.
+ 00h 00m 29.688s Batch 18 finished.
+ 00h 00m 31.083s Batch 19 finished.
+ 00h 00m 32.567s PI value output -> 4286DFB04
+
+Statistics
+
+ Calculation + Reduction time: 32.029s + 0.526s

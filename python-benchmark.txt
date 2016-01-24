@@ -1,0 +1,201 @@
+[user@host ~]$ python benchmark.py
+Execution time of test without OpenCL:  0.0385432243347168 s
+===============================================================
+Platform name: NVIDIA CUDA
+Platform profile: FULL_PROFILE
+Platform vendor: NVIDIA Corporation
+Platform version: OpenCL 1.2 CUDA 7.5.0
+---------------------------------------------------------------
+Device name: GeForce GT 640M
+Device type: GPU
+Device memory:  2047 MB
+Device max clock speed: 708 MHz
+Device compute units: 2
+Device max work group size: 1024
+Device max work item sizes: [1024, 1024, 64]
+Data points: 8388608
+Workers: 256
+Preferred work group size multiple: 32
+Execution time of test: 0.00668986 s
+Results OK
+===============================================================
+Platform name: Intel(R) OpenCL
+Platform profile: FULL_PROFILE
+Platform vendor: Intel(R) Corporation
+Platform version: OpenCL 1.2 LINUX
+---------------------------------------------------------------
+Device name:        Intel(R) Core(TM) i5-3210M CPU @ 2.50GHz
+Device type: CPU
+Device memory:  7849 MB
+Device max clock speed: 2500 MHz
+Device compute units: 4
+Device max work group size: 8192
+Device max work item sizes: [8192, 8192, 8192]
+/usr/lib/python3.5/site-packages/pyopencl/__init__.py:206: CompilerWarning: Non-empty compiler output encountered. Set the environment variable PYOPENCL_COMPILER_OUTPUT=1 to see more.
+  "to see more.", CompilerWarning)
+Data points: 8388608
+Workers: 256
+Preferred work group size multiple: 128
+Execution time of test: 0.0110767 s
+Results OK
+[user@host ~]$ python benchmark.py
+Execution time of test without OpenCL:  0.038794755935668945 s
+===============================================================
+Platform name: NVIDIA CUDA
+Platform profile: FULL_PROFILE
+Platform vendor: NVIDIA Corporation
+Platform version: OpenCL 1.2 CUDA 7.5.0
+---------------------------------------------------------------
+Device name: GeForce GT 640M
+Device type: GPU
+Device memory:  2047 MB
+Device max clock speed: 708 MHz
+Device compute units: 2
+Device max work group size: 1024
+Device max work item sizes: [1024, 1024, 64]
+Data points: 8388608
+Workers: 256
+Preferred work group size multiple: 32
+Execution time of test: 0.00669542 s
+Results OK
+===============================================================
+Platform name: Intel(R) OpenCL
+Platform profile: FULL_PROFILE
+Platform vendor: Intel(R) Corporation
+Platform version: OpenCL 1.2 LINUX
+---------------------------------------------------------------
+Device name:        Intel(R) Core(TM) i5-3210M CPU @ 2.50GHz
+Device type: CPU
+Device memory:  7849 MB
+Device max clock speed: 2500 MHz
+Device compute units: 4
+Device max work group size: 8192
+Device max work item sizes: [8192, 8192, 8192]
+/usr/lib/python3.5/site-packages/pyopencl/__init__.py:206: CompilerWarning: Non-empty compiler output encountered. Set the environment variable PYOPENCL_COMPILER_OUTPUT=1 to see more.
+  "to see more.", CompilerWarning)
+Data points: 8388608
+Workers: 256
+Preferred work group size multiple: 128
+Execution time of test: 0.0106511 s
+Results OK
+[user@host ~]$ python benchmark.py
+Execution time of test without OpenCL:  0.03869223594665527 s
+===============================================================
+Platform name: NVIDIA CUDA
+Platform profile: FULL_PROFILE
+Platform vendor: NVIDIA Corporation
+Platform version: OpenCL 1.2 CUDA 7.5.0
+---------------------------------------------------------------
+Device name: GeForce GT 640M
+Device type: GPU
+Device memory:  2047 MB
+Device max clock speed: 708 MHz
+Device compute units: 2
+Device max work group size: 1024
+Device max work item sizes: [1024, 1024, 64]
+Data points: 8388608
+Workers: 256
+Preferred work group size multiple: 32
+Execution time of test: 0.00668918 s
+Results OK
+===============================================================
+Platform name: Intel(R) OpenCL
+Platform profile: FULL_PROFILE
+Platform vendor: Intel(R) Corporation
+Platform version: OpenCL 1.2 LINUX
+---------------------------------------------------------------
+Device name:        Intel(R) Core(TM) i5-3210M CPU @ 2.50GHz
+Device type: CPU
+Device memory:  7849 MB
+Device max clock speed: 2500 MHz
+Device compute units: 4
+Device max work group size: 8192
+Device max work item sizes: [8192, 8192, 8192]
+/usr/lib/python3.5/site-packages/pyopencl/__init__.py:206: CompilerWarning: Non-empty compiler output encountered. Set the environment variable PYOPENCL_COMPILER_OUTPUT=1 to see more.
+  "to see more.", CompilerWarning)
+Data points: 8388608
+Workers: 256
+Preferred work group size multiple: 128
+Execution time of test: 0.0137986 s
+Results OK
+[user@host ~]$ python benchmark.py
+Execution time of test without OpenCL:  0.03953194618225098 s
+===============================================================
+Platform name: NVIDIA CUDA
+Platform profile: FULL_PROFILE
+Platform vendor: NVIDIA Corporation
+Platform version: OpenCL 1.2 CUDA 7.5.0
+---------------------------------------------------------------
+Device name: GeForce GT 640M
+Device type: GPU
+Device memory:  2047 MB
+Device max clock speed: 708 MHz
+Device compute units: 2
+Device max work group size: 1024
+Device max work item sizes: [1024, 1024, 64]
+Data points: 8388608
+Workers: 256
+Preferred work group size multiple: 32
+Execution time of test: 0.00669414 s
+Results OK
+===============================================================
+Platform name: Intel(R) OpenCL
+Platform profile: FULL_PROFILE
+Platform vendor: Intel(R) Corporation
+Platform version: OpenCL 1.2 LINUX
+---------------------------------------------------------------
+Device name:        Intel(R) Core(TM) i5-3210M CPU @ 2.50GHz
+Device type: CPU
+Device memory:  7849 MB
+Device max clock speed: 2500 MHz
+Device compute units: 4
+Device max work group size: 8192
+Device max work item sizes: [8192, 8192, 8192]
+/usr/lib/python3.5/site-packages/pyopencl/__init__.py:206: CompilerWarning: Non-empty compiler output encountered. Set the environment variable PYOPENCL_COMPILER_OUTPUT=1 to see more.
+  "to see more.", CompilerWarning)
+Data points: 8388608
+Workers: 256
+Preferred work group size multiple: 128
+Execution time of test: 0.0151542 s
+Results OK
+[user@host ~]$ python benchmark.py
+Execution time of test without OpenCL:  0.039144277572631836 s
+===============================================================
+Platform name: NVIDIA CUDA
+Platform profile: FULL_PROFILE
+Platform vendor: NVIDIA Corporation
+Platform version: OpenCL 1.2 CUDA 7.5.0
+---------------------------------------------------------------
+Device name: GeForce GT 640M
+Device type: GPU
+Device memory:  2047 MB
+Device max clock speed: 708 MHz
+Device compute units: 2
+Device max work group size: 1024
+Device max work item sizes: [1024, 1024, 64]
+Data points: 8388608
+Workers: 256
+Preferred work group size multiple: 32
+Execution time of test: 0.00669606 s
+Results OK
+===============================================================
+Platform name: Intel(R) OpenCL
+Platform profile: FULL_PROFILE
+Platform vendor: Intel(R) Corporation
+Platform version: OpenCL 1.2 LINUX
+---------------------------------------------------------------
+Device name:        Intel(R) Core(TM) i5-3210M CPU @ 2.50GHz
+Device type: CPU
+Device memory:  7849 MB
+Device max clock speed: 2500 MHz
+Device compute units: 4
+Device max work group size: 8192
+Device max work item sizes: [8192, 8192, 8192]
+/usr/lib/python3.5/site-packages/pyopencl/__init__.py:206: CompilerWarning: Non-empty compiler output encountered. Set the environment variable PYOPENCL_COMPILER_OUTPUT=1 to see more.
+  "to see more.", CompilerWarning)
+Data points: 8388608
+Workers: 256
+Preferred work group size multiple: 128
+Execution time of test: 0.0160653 s
+Results OK
+

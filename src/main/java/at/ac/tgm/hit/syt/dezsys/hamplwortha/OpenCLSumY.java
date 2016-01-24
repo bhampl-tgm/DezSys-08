@@ -44,8 +44,6 @@ public class OpenCLSumY {
         //CL.create();
         System.out.println("CL created");
 
-        System.out.println(CLPlatform.getPlatforms());
-
         CLPlatform platform = CLPlatform.getPlatforms().get(0);
         System.out.println("Platform created");
 
